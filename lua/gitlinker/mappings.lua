@@ -5,7 +5,7 @@ local api = vim.api
 local function set_keymap(mode, keys, mapping_opts)
   mapping_opts = vim.tbl_extend(
     "force",
-    { noremap = true, silent = true },
+    { noremap = true, silent = true, desc = "Yank git link" },
     mapping_opts or {}
   )
   api.nvim_set_keymap(
